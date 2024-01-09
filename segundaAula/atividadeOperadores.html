@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<style>
+    body{
+        background-color: pink;
+        color: white;
+        font: normal 20pt arial 
+    }
+    p{
+        color: violet;
+    }
+    
+</style>
+<body>
+    <h1>Atividade</h1>
+    <p>Vamos brincar com números!</p>
+    
+</body>
+<script>
+    var numero1 = parseFloat(prompt('Digite um número: '))
+    var numero2 = parseFloat(prompt('Digite outro número: '))
+
+    var soma = (numero1 + numero2)
+    var subtracao = (numero1 - numero2)
+    var divisao = (numero1 / numero2)
+    var multiplicacao = (numero1 * numero2)
+
+    /*window.alert('A soma dos números é: ' + soma)
+    window.alert('A subtração dos números é: ' + subtracao)
+    window.alert('A divisão dos números é: ' + divisao)
+    window.alert('A multiplicação dos números é: ' + multiplicacao)*/
+
+    window.alert('A soma dos números é: ' + soma + '\n A subtração dos números é: ' + subtracao + '\n A divisão dos números é: ' + divisao + '\n A multiplicação dos números é: ' + multiplicacao)
+
+    document.write('A soma dos números é: ' + soma)
+    document.write('<br> A subtração dos números é: ' + subtracao)
+    document.write('<br> A divisão dos números é: ' + divisao)
+    document.write('<br> A multiplicação dos números é: ' + multiplicacao)
+
+
+</script>
+</html>
