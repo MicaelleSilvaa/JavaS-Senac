@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: cornflowerblue;
+        color: rgb(248, 245, 245);
+        font: normal 20pt verdana;
+    }
+
+</style>
+<body>
+    <h1>Iniciando o estudo com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Dominando objetos</p>
+    <div>Click em mim</div>
+    <p class="novo">Paragráfo novo</p>
+
+    <div class="msg">Click em mim</div>
+
+    <script>
+        // window.document.write('Olá mundo!') //digitar um texto utilizando o write
+        // window.document.write(window.navigator.appName) //exibe na tela o comportamento do navegador
+        // window.document.write(window.navigator.language) //exibe a linguagem padrão do navegador
+        // window.document.write(window.document.URL) //endereço da página
+        
+        var p1 = window.document.getElementsByTagName('p')[0] //cria uma variavel e pega o elemento p da posição 0 do array
+        window.document.write('Está escrito assim: ' + p1.innerText) //pega o elemento p da posição 0 e imprimi novamente com -1.innertext
+
+        var corpo = window.document.body
+        corpo.style.background='black' //alterando a cor do corpo para preto
+
+        var h1 = window.document.body
+        h1.style.color='yellow' // alterando o texto para amarelo
+
+        var d = window.document.querySelector('div.msg')
+        d.style.color='green'
+        d.innerText='Estou aguardando....'
+
+        var novo = window.document.querySelector('p.novo')
+        novo.style.color='violet'    
+
+
+    </script>
+    
+</body>
+</html>
